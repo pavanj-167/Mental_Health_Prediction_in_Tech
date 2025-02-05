@@ -1937,3 +1937,140 @@ def routes_info():
     return jsonify(routes)
 if __name__ == '__main__':
     app.run(port=5004,host="0.0.0.0")
+
+
+Hi pasindu! 
+these are the unused functions I found in app.py
+ 
+get_extracted_errors
+
+get_predictions_from_csv_encode
+
+get_older_models
+
+train_priority_model
+
+get_predections_csv_xgboost
+
+update_record
+
+load_old_model_cat
+
+routes_info
+
+get_predictions_multiple_files_csv_parser_xgboost_s3
+
+reset_old_model_cat
+
+configure_s3
+
+get_predictions_csv_parser_xgboost
+
+get_predictions_list
+
+list_files_in_s3
+
+update_model
+
+schedule_job
+
+extract
+
+get_best_resolution
+
+assign_work_endpoint
+
+get_models
+
+get_sub_issue_xgboost
+
+start_retrain
+
+re_train_models
+
+get_predictions_xgboost
+
+load_old_resolution_model
+
+get_resolution_data
+
+create_issue
+
+upload_file
+
+upload_files
+
+reset_resolution_model_cat
+
+get_cat_data
+
+get_predections_csv_xgboost_list
+
+process_json
+
+update_resolution_model
+
+get_predictions_multiple_files_csv_parser_xgboost
+
+upload_fixed_folder_to_s3 
+ 
+I ran with vulture module, it shows so many functions also 
+ 
+thanks there is one more thing
+ 
+Yes pasindu, tell me
+ 
+{
+
+    "baseUrl": "http://10.64.65.95:5004/",
+
+    "uploadFileEndpoint": "uploads",
+
+    "uploadMultipleFilesEndpoint" :"upload_files",
+
+    "analyseErrorsEndpoint": "get-log-predictions",
+
+    "analyseErrorsInMultipleFilesEndpoint": "get-log-predictions-multiple-files",
+
+    "editFailureDataEndpoint": "add-new-data",
+
+    "updateFailureDataEndpoint": "update-data",
+
+    "jiraTicketEndPoint": "jira-create",
+
+    "getModelsListEndpoint" : "get-models",
+
+    "getFilesFromS3" : "list_files",
+
+    "connectToS3" : "s3_config",
+
+    "getPredictionsFromS3BucketFiles" : "get-log-predictions-multiple-files-from-s3-bucket",
+
+    "getMachineKeyEndpoint" : "machine_id",
+
+    "decryptLicenseEndpoint" : "decrypt_license",
+
+    "userRegisterEndpoint" : "register",
+
+    "userLoginEndpoint" : "login",
+
+    "userLogoutEndpoint" : "logout",
+
+    "extractCSVEndpoint" : "extract"
+
+}
+
+ 
+ 
+there are the current endpoints in use forget about anyhtin log in loogout and stuff ig those endpoints only in use fugre out what are the enpoints that are not in use then there will be more un used methods 
+ 
+alos in the functions list do not consder end points for exmaple 
+ 
+get_extracted_errors
+ 
+this is a endpoint so yes this will not be called with in the file it will call as a api so those mayeb in use 
+ 
+cross check with the list 
+ 
+
+
